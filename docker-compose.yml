@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  json-to-csv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python main.py
+    volumes:
+      - ./:/app
