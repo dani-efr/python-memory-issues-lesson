@@ -8,3 +8,7 @@ services:
     command: python main.py
     volumes:
       - ./:/app
+    deploy:
+      resources:
+        limits:
+          memory: 64M
